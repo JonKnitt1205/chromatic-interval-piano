@@ -13,7 +13,7 @@ h1 {
 h2{
     margin: 0;
     font-weight: 400;
-    margin-bottom: 7.5px;
+    margin-bottom: 7px;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
 }
 
 .piano {
-    width: 356.25px;
+    width: 356px;
     height: 200px;
     background-color: brown;
     border-radius: 5px;
@@ -40,12 +40,12 @@ body {
 
 .white-key-holder {
     width: 342px;
-    height: 130.9px;
+    height: 131px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 3px;
     margin-inline: 7px;
-    margin-block: 8.9px;
+    margin-block: 9px;
 }
 
 .white-key {
@@ -75,7 +75,7 @@ body {
     gap: 2px;
     grid-template-columns: repeat(7, 1fr);
     position: absolute;
-    top: 51.55px;
+    top: 52px;
     margin-inline: 34px;
 }
 
@@ -85,7 +85,7 @@ body {
     border: none;
     display: flex;
     justify-content: center;
-    width: 27.8px;
+    width: 28px;
     border-radius: 0 0 5px 5px;
     align-items: end;
     padding-bottom: 4px;
@@ -182,7 +182,7 @@ input:checked + .slider:before {
 }
 
 .switch-box {
-    margin-block: 8.9px;
+    margin-block: 9px;
     display: flex;
     justify-content: space-evenly;
 }
