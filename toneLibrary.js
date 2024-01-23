@@ -16,11 +16,6 @@ window.addEventListener("mousedown", function() {
   // If you need to be able to disable unmute at a later time, you can use the returned handle's dispose() method
   // if you don't need to do that (most folks won't) then you can simply ignore the return value
   let unmuteHandle = unmute(context, allowBackgroundPlayback, forceIOSBehavior);
-  
-  // ... at some later point you wish to STOP unmute control
-  unmuteHandle.dispose();
-  unmuteHandle = null;
-  
   }
 });
 
