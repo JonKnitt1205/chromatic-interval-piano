@@ -13,7 +13,7 @@ h1 {
 h2{
     margin: 0;
     font-weight: 400;
-    margin-bottom: 2%;
+    margin-bottom: 7.5px;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
 }
 
 .piano {
-    width: 95%;
+    width: 356.25px;
     height: 200px;
     background-color: brown;
     border-radius: 5px;
@@ -39,13 +39,13 @@ body {
 }
 
 .white-key-holder {
-    width: 96%;
-    height: 70%;
+    width: 342px;
+    height: 130.9px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 1%;
-    margin-inline: 2%;
-    margin-block: 2.5%;
+    gap: 3px;
+    margin-inline: 7px;
+    margin-block: 8.9px;
 }
 
 .white-key {
@@ -54,7 +54,7 @@ body {
     border-radius: 0 0 10px 10px;
     display: flex;
     align-items: end;
-    padding-bottom: 15%;
+    padding-bottom: 6px;
     justify-content: center;
 }
 
@@ -68,14 +68,14 @@ body {
 }
 
 .black-key-holder {
-    width: 80%;
-    height: 45%;
+    width: 285px;
+    height: 86px;
     display: grid;
-    gap: 5.5%;
+    gap: 18px;
     grid-template-columns: repeat(7, 1fr);
     position: absolute;
-    top: 27.75%;
-    left: 9.6%;
+    top: 52px;
+    left: 34.2px;
 }
 
 .black-key {
@@ -84,10 +84,10 @@ body {
     border: none;
     display: flex;
     justify-content: center;
-    width: 110%;
+    width: 27.8px;
     border-radius: 0 0 5px 5px;
     align-items: end;
-    padding-bottom: 15%;
+    padding-bottom: 4px;
 }
 
 .black-key:hover, .black-key:active {
@@ -126,7 +126,6 @@ body {
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin-inline: 5%;
 }
   
 .switch input {
@@ -182,7 +181,7 @@ input:checked + .slider:before {
 }
 
 .switch-box {
-    margin-block: 2.5%;
+    margin-block: 8.9px;
     display: flex;
     justify-content: space-evenly;
 }
