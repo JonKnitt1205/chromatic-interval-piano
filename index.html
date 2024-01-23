@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="toneLibrary.js"></script>
+    <script src="script.js"></script>
+    <title>Chromatic Interval Piano | Jonathan Knittel</title>
+</head>
+<body>
+    <h1>Chromatic Interval Piano</h1>
+    <h2>by Jonathan Knittel</h2>
+
+    <div class="piano">
+        <div class="switch-box">
+            <label class="switch">
+                <input type="checkbox" aria-label="solfge switch" onclick="slider1()">
+                <span class="slider round"></span>
+            </label>
+    
+            <label class="switch">
+                <input type="checkbox" aria-label="ascending switch" onclick="slider2()">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="white-key-holder">
+            <button type="button" class="white-key" onclick="noteC4()" id="1">Do</button>
+            <button type="button" class="white-key" onclick="noteD4()" id="2">Re</button>
+            <button type="button" class="white-key" onclick="noteE4()" id="3">Mi</button>
+            <button type="button" class="white-key" onclick="noteF4()" id="4">Fa</button>
+            <button type="button" class="white-key" onclick="noteG4()" id="5">So</button>
+            <button type="button" class="white-key" onclick="noteA4()" id="6">La</button>
+            <button type="button" class="white-key" onclick="noteB4()" id="7">Ti</button>
+            <button type="button" class="white-key" onclick="noteC5()" id="8">Do</button>
+        </div>
+
+        <div class="black-key-holder">
+            <button type="button" class="black-key one" onclick="noteDb4()" id="9">Di</button>
+            <button type="button" class="black-key two" onclick="noteEb4()" id="10">Ri</button>
+            <button type="button" class="black-key three" onclick="noteGb4()" id="11">Fi</button>
+            <button type="button" class="black-key four" onclick="noteAb4()" id="12">Si</button>
+            <button type="button" class="black-key five" onclick="noteBb4()" id="13">Li</button>
+        </div>
+    </div>
+
+    <p id="result">Play two notes to calculate an interval.</p>
+</body>
+</html>

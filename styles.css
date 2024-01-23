@@ -1,0 +1,188 @@
+html {
+    background-color: hsl(0, 0%, 12%);
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+h1 { 
+    margin: 0;
+    font-weight: 500;
+}
+
+h2{
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+body {
+    margin: 0;
+    width: 375px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.piano {
+    width: 95%;
+    height: 200px;
+    background-color: brown;
+    border-radius: 5px;
+    position: relative;
+}
+
+.white-key-holder {
+    width: 96%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1%;
+    margin-inline: 2%;
+    margin-block: 2.5%;
+}
+
+.white-key {
+    background-color: white;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 15%;
+    justify-content: center;
+}
+
+.white-key:hover, .white-key:active {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.white-key:active {
+    background-color: hsl(0, 0%, 80%);
+}
+
+.black-key-holder {
+    width: 80%;
+    height: 45%;
+    display: grid;
+    gap: 5.5%;
+    grid-template-columns: repeat(7, 1fr);
+    position: absolute;
+    top: 27.75%;
+    left: 9.6%;
+}
+
+.black-key {
+    background-color: hsl(0, 0%, 12%);
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 110%;
+    border-radius: 0 0 5px 5px;
+    align-items: end;
+    padding-bottom: 15%;
+}
+
+.black-key:hover, .black-key:active {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 22%);;
+}
+
+.black-key:active {
+    background-color: hsl(0, 0%, 32%);;
+}
+
+.one {
+    grid-column: 1;
+}
+
+.two {
+    grid-column: 2;
+}
+
+.three {
+    grid-column: 4;
+}
+
+.four {
+    grid-column: 5;
+}
+
+.five {
+    grid-column: 6;
+}
+
+/* switch take from w3 schools */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-inline: 5%;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.switch-box {
+    margin-block: 2.5%;
+    display: flex;
+    justify-content: space-evenly;
+}
